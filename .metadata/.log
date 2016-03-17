@@ -1813,3 +1813,6 @@ This version of EclipsePro Test was compiled for Eclipse 3.7 but is running on E
 This version of Code Coverage was compiled for Eclipse 3.7 but is running on Eclipse 3.10.
 This version of Shared was compiled for Eclipse 3.7 but is running on Eclipse 3.10.
 
+
+!ENTRY com.instantiations.eclipse 1 0 2016-03-16 23:20:44.329
+!MESSAGE Compilation unit does not exist: VendingMachineItemTest.java
