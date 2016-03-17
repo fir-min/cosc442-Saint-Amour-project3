@@ -1,4 +1,4 @@
-package edu.towson.cis.cosc442.project2.vendingmachine;
+package edu.towson.cis.cosc442.project3.vendingmachine;
 
 import static org.junit.Assert.*;
 
@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class VendingMachineItemTest {
 	
-	public VendingMachineItem a, b, c, d, e;
+	public VendingMachineItem a, b, c, d, e, f;
 	@Before
 	public void setUp() throws Exception {
 		a = new VendingMachineItem("cookie", 1.25);
@@ -24,7 +24,7 @@ public class VendingMachineItemTest {
 	}
 	
 	@Test
-	public void testVendingMachineException() {
+	public void testVendingMachineException1() {
 		try {
 	        c = new VendingMachineItem("candy", 0.0);
 	        fail();
@@ -42,12 +42,16 @@ public class VendingMachineItemTest {
 	}
 
 	@Test
-	public void testGetPrice() {
-		assertTrue(1.25 == a.getPrice());
-		assertTrue(2.25 == b.getPrice());
-		assertTrue(4.25 == d.getPrice());
-		assertFalse(1.25 == e.getPrice());
+	public void testGetPrice1() {
+		//
+		double z = a.getPrice();
+		//boolean r = ;
+		
+		assertEquals((z == 1.25), true);
+		
+		
 	}
+	
 	
 	
 

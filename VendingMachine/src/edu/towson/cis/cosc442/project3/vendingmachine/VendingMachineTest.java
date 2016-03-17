@@ -1,7 +1,7 @@
 /**
  * 
  */
-package edu.towson.cis.cosc442.project2.vendingmachine;
+package edu.towson.cis.cosc442.project3.vendingmachine;
 
 import static org.junit.Assert.*;
 
@@ -39,7 +39,7 @@ public class VendingMachineTest {
 	}
 
 	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project2.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project2.vendingmachine.VendingMachineItem, java.lang.String)}.
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#addItem(edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineItem, java.lang.String)}.
 	 */
 	@Test
 	public void testAddItem1() {
@@ -68,7 +68,7 @@ public class VendingMachineTest {
 	}
 
 	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project2.vendingmachine.VendingMachine#getItem(java.lang.String)}.
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#getItem(java.lang.String)}.
 	 */
 	@Test
 	public void testGetItem1() {
@@ -81,6 +81,7 @@ public class VendingMachineTest {
 		assertEquals(b, v.getItem("B"));
 		assertEquals(c, v.getItem("C"));
 		assertEquals(d, v.getItem("D"));
+		
 	}
 	
 	@Test
@@ -99,7 +100,7 @@ public class VendingMachineTest {
 	}
 
 	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project2.vendingmachine.VendingMachine#removeItem(java.lang.String)}.
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#removeItem(java.lang.String)}.
 	 */
 	@Test
 	public void testRemoveItem1() {
@@ -112,6 +113,7 @@ public class VendingMachineTest {
 		assertEquals(b, v.removeItem("B"));
 		assertEquals(c, v.removeItem("C"));
 		assertEquals(d, v.removeItem("D"));
+		
 	}
 	
 	@Test
@@ -130,7 +132,7 @@ public class VendingMachineTest {
 	}
 
 	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project2.vendingmachine.VendingMachine#insertMoney(double)}.
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#insertMoney(double)}.
 	 */
 	@Test
 	public void testInsertMoney1() {
@@ -153,19 +155,32 @@ public class VendingMachineTest {
 	}
 
 	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project2.vendingmachine.VendingMachine#getBalance()}.
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#getBalance()}.
 	 */
 	@Test
-	public void testGetBalance() {
+	public void testGetBalance1() {
 		v.insertMoney(5.0);
-		assertTrue(5.0 == v.getBalance());
+		//assertTrue(5.0 == v.getBalance());
 		
 		v.insertMoney(6.00);
 		assertTrue(11.0 == v.getBalance());
+		
+	}
+	
+	@Test
+	public void testGetBalance2() {
+		v.insertMoney(5.0);
+		assertTrue(5.0 == v.getBalance());
+	}
+	
+	@Test
+	public void testGetBalance3() {
+		
+		v.getBalance();
 	}
 
 	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project2.vendingmachine.VendingMachine#makePurchase(java.lang.String)}.
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#makePurchase(java.lang.String)}.
 	 */
 	@Test
 	public void testMakePurchase1() {
@@ -176,6 +191,7 @@ public class VendingMachineTest {
 		v.insertMoney(5.00);
 		
 		assertTrue(v.makePurchase("C"));
+		
 	}
 	
 	@Test
@@ -198,14 +214,19 @@ public class VendingMachineTest {
 		
 		assertFalse(v.makePurchase("D"));
 		
+	}
+	
+	@Test
+	public void testMakePurchase4() {
+		assertFalse(v.makePurchase("D"));
 		
 	}
 
 	/**
-	 * Test method for {@link edu.towson.cis.cosc442.project2.vendingmachine.VendingMachine#returnChange()}.
+	 * Test method for {@link edu.towson.cis.cosc442.project3.vendingmachine.VendingMachine#returnChange()}.
 	 */
 	@Test
-	public void testReturnChange() {
+	public void testReturnChange1() {
 		v.addItem(a, "A");
 		v.addItem(b, "B");
 		v.addItem(c, "C");
@@ -213,8 +234,16 @@ public class VendingMachineTest {
 		v.insertMoney(5.00);
 		
 		v.makePurchase("B");
+		double c = v.returnChange();
+		assertTrue(c  == 3.0);
 		
-		assertTrue(3.0 == v.returnChange());
 	}
+	
+	@Test
+	public void testReturnChange2() {
+		v.returnChange();
+		
+	}
+	
 
 }

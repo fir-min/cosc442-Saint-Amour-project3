@@ -1,4 +1,4 @@
-package edu.towson.cis.cosc442.project2.vendingmachine;
+package edu.towson.cis.cosc442.project3.vendingmachine;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

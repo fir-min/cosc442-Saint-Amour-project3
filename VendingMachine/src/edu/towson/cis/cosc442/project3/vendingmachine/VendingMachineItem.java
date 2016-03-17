@@ -1,4 +1,4 @@
-package edu.towson.cis.cosc442.project2.vendingmachine;
+package edu.towson.cis.cosc442.project3.vendingmachine;
 
 /**
  * Class for items in the vending machine
