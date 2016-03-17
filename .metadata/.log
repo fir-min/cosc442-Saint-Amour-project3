@@ -1801,3 +1801,15 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.instantiations.eclipse 1 0 2016-03-16 23:12:29.904
+!MESSAGE cannot support aboutToShutdown event - 2
+
+!ENTRY com.instantiations.common.core 2 0 2016-03-16 23:13:44.826
+!MESSAGE This version of CodePro Analytix and PlusPak was compiled for Eclipse 3.7 but is running on Eclipse 3.10.
+This version of CodePro AnalytiX was compiled for Eclipse 3.7 but is running on Eclipse 3.10.
+This version of EclipsePro Audit was compiled for Eclipse 3.7 but is running on Eclipse 3.10.
+This version of EclipsePro Test was compiled for Eclipse 3.7 but is running on Eclipse 3.10.
+This version of Code Coverage was compiled for Eclipse 3.7 but is running on Eclipse 3.10.
+This version of Shared was compiled for Eclipse 3.7 but is running on Eclipse 3.10.
+
