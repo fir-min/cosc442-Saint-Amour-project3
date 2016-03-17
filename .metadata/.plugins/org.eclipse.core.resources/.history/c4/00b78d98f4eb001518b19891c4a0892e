@@ -153,7 +153,7 @@ public class VendingMachineTest {
 		throws Exception {
 		VendingMachine fixture = new VendingMachine();
 		fixture.balance = 1.0;
-		VendingMachineItem item = new VendingMachineItem("", 1.0);
+		VendingMachineItem item;
 		String code = "C";
 
 		fixture.addItem(item, code);
@@ -399,8 +399,7 @@ public class VendingMachineTest {
 		VendingMachine fixture = new VendingMachine();
 		fixture.balance = 1.0;
 		String code = "A";
-		VendingMachineItem item = new VendingMachineItem("test", 2.50);
-		fixture.addItem(item, code);
+
 		VendingMachineItem result = fixture.removeItem(code);
 
 		// add additional test code here
@@ -416,19 +415,6 @@ public class VendingMachineTest {
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testRemoveItem_3()
-		throws Exception {
-		VendingMachine fixture = new VendingMachine();
-		fixture.balance = 1.0;
-		String code = "A";
-
-		VendingMachineItem result = fixture.removeItem(code);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-	
-	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
-	public void testRemoveItem_4()
 		throws Exception {
 		VendingMachine fixture = new VendingMachine();
 		fixture.balance = 1.0;
