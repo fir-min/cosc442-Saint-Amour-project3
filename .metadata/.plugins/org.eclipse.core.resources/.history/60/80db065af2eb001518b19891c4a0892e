@@ -54,12 +54,12 @@ public class VendingMachineTest {
 	public void testAddItem_4()
 		throws Exception {
 
-		VendingMachine fixture = new VendingMachine();
-		fixture.balance = 1.0;
-		VendingMachineItem item = new VendingMachineItem("", 0.0);
-		String code = "A";
+		VendingMachine result = new VendingMachine();
 
-		fixture.addItem(item, code);
+		// add additional test code here
+		assertNotNull(result);
+		assertEquals(0.0, result.getBalance(), 1.0);
+		assertEquals(0.0, result.returnChange(), 1.0);
 	}
 
 	/**
@@ -116,19 +116,6 @@ public class VendingMachineTest {
 		fixture.balance = 1.0;
 		VendingMachineItem item = new VendingMachineItem("", 1.0);
 		String code = "";
-
-		fixture.addItem(item, code);
-
-		// add additional test code here
-	}
-	
-	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
-	public void testAddItem_5()
-		throws Exception {
-		VendingMachine fixture = new VendingMachine();
-		fixture.balance = 1.0;
-		VendingMachineItem item = new VendingMachineItem("", 1.0);
-		String code = "F";
 
 		fixture.addItem(item, code);
 
@@ -211,7 +198,6 @@ public class VendingMachineTest {
 		fixture.insertMoney(amount);
 
 		// add additional test code here
-		assertEquals(2.0, fixture.getBalance(), 0.1);
 	}
 
 	/**
@@ -226,19 +212,7 @@ public class VendingMachineTest {
 		throws Exception {
 		VendingMachine fixture = new VendingMachine();
 		fixture.balance = 1.0;
-		double amount = -4.0;
-
-		fixture.insertMoney(amount);
-
-		// add additional test code here
-	}
-	
-	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
-	public void testInsertMoney_3()
-		throws Exception {
-		VendingMachine fixture = new VendingMachine();
-		fixture.balance = 1.0;
-		double amount = 0.0;
+		double amount = -4.9E-324;
 
 		fixture.insertMoney(amount);
 

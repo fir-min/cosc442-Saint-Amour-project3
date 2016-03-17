@@ -211,7 +211,6 @@ public class VendingMachineTest {
 		fixture.insertMoney(amount);
 
 		// add additional test code here
-		assertEquals(2.0, fixture.getBalance(), 0.1);
 	}
 
 	/**
@@ -226,19 +225,7 @@ public class VendingMachineTest {
 		throws Exception {
 		VendingMachine fixture = new VendingMachine();
 		fixture.balance = 1.0;
-		double amount = -4.0;
-
-		fixture.insertMoney(amount);
-
-		// add additional test code here
-	}
-	
-	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
-	public void testInsertMoney_3()
-		throws Exception {
-		VendingMachine fixture = new VendingMachine();
-		fixture.balance = 1.0;
-		double amount = 0.0;
+		double amount = -4.9E-324;
 
 		fixture.insertMoney(amount);
 

@@ -48,19 +48,7 @@ public class VendingMachineItemTest {
 		VendingMachineItem result = new VendingMachineItem(name, price);
 
 		// add additional test code here
-		//assertNotNull(result);
-	}
-	
-	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
-	public void testVendingMachineItem_3()
-		throws Exception {
-		String name = "cookie";
-		double price = -5.0;
-
-		VendingMachineItem result = new VendingMachineItem(name, price);
-
-		// add additional test code here
-		//assertNotNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -79,17 +67,6 @@ public class VendingMachineItemTest {
 
 		// add additional test code here
 		assertEquals("", result);
-	}
-	
-	@Test
-	public void testGetName_2()
-		throws Exception {
-		VendingMachineItem fixture = new VendingMachineItem("testing", 1.0);
-
-		String result = fixture.getName();
-
-		// add additional test code here
-		assertNotEquals("testingg", result);
 	}
 
 	/**
@@ -119,17 +96,6 @@ public class VendingMachineItemTest {
 
 		// add additional test code here
 		assertEquals(2.50, result, 0.1);
-	}
-	
-	@Test
-	public void testGetPrice_3()
-		throws Exception {
-		VendingMachineItem fixture = new VendingMachineItem("test", 2.50);
-
-		double result = fixture.getPrice();
-
-		// add additional test code here
-		assertNotEquals(3.50, result, 0.1);
 	}
 
 	/**

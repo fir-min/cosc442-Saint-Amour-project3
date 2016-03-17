@@ -120,17 +120,6 @@ public class VendingMachineItemTest {
 		// add additional test code here
 		assertEquals(2.50, result, 0.1);
 	}
-	
-	@Test
-	public void testGetPrice_3()
-		throws Exception {
-		VendingMachineItem fixture = new VendingMachineItem("test", 2.50);
-
-		double result = fixture.getPrice();
-
-		// add additional test code here
-		assertNotEquals(3.50, result, 0.1);
-	}
 
 	/**
 	 * Perform pre-test initialization.
