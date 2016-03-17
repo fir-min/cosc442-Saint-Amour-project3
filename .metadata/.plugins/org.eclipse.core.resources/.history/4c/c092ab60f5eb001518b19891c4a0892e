@@ -365,22 +365,6 @@ public class VendingMachineTest {
 		// add additional test code here
 		assertTrue(result);
 	}
-	
-	@Test
-	public void testMakePurchase_5()
-			throws Exception {
-			VendingMachine fixture = new VendingMachine();
-			//fixture.balance = 1.0;
-			VendingMachineItem item = new VendingMachineItem("test", 3.5);
-			String code = "A";
-			fixture.insertMoney(6.0);
-			fixture.addItem(item, code);
-
-			boolean result = fixture.makePurchase(code);
-
-			// add additional test code here
-			assertTrue(result);
-		}
 
 	/**
 	 * Run the VendingMachineItem removeItem(String) method test.
