@@ -440,6 +440,6 @@ public class VendingMachineTest {
 	 * @generatedBy CodePro at 3/16/16 11:30 PM
 	 */
 	public static void main(String[] args) {
-		//new org.junit.runner.JUnitCore().run(VendingMachineTest.class);
+		new org.junit.runner.JUnitCore().run(VendingMachineTest.class);
 	}
 }

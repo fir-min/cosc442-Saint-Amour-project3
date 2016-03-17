@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>VendingMachineItemTest.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">src (Mar 16, 2016 11:47:20 PM)</a> &gt; <a href="../../index.html" class="el_group">VendingMachineTest</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">edu.towson.cis.cosc442.project3.vendingmachine</a> &gt; <span class="el_source">VendingMachineItemTest.java</span></div><h1>VendingMachineItemTest.java</h1><pre class="source lang-java linenums">package edu.towson.cis.cosc442.project3.vendingmachine;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+/**
+ * The class &lt;code&gt;VendingMachineItemTest&lt;/code&gt; contains tests for the class &lt;code&gt;{@link VendingMachineItem}&lt;/code&gt;.
+ *
+ * @generatedBy CodePro at 3/16/16 11:31 PM
+ * @author FIRMS
+ * @version $Revision: 1.0 $
+ */
+<span class="fc" id="L13">public class VendingMachineItemTest {</span>
+	/**
+	 * Run the VendingMachineItem(String,double) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 */
+	@Test
+	public void testVendingMachineItem_1()
+		throws Exception {
+<span class="fc" id="L24">		String name = &quot;&quot;;</span>
+<span class="fc" id="L25">		double price = 1.0;</span>
+
+<span class="fc" id="L27">		VendingMachineItem result = new VendingMachineItem(name, price);</span>
+
+		// add additional test code here
+<span class="fc" id="L30">		assertNotNull(result);</span>
+<span class="fc" id="L31">		assertEquals(&quot;&quot;, result.getName());</span>
+<span class="fc" id="L32">		assertEquals(1.0, result.getPrice(), 1.0);</span>
+<span class="fc" id="L33">	}</span>
+
+	/**
+	 * Run the VendingMachineItem(String,double) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 */
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testVendingMachineItem_2()
+		throws Exception {
+<span class="fc" id="L45">		String name = &quot;cookies&quot;;</span>
+<span class="fc" id="L46">		double price = 0.0;</span>
+
+<span class="nc" id="L48">		VendingMachineItem result = new VendingMachineItem(name, price);</span>
+
+		// add additional test code here
+		//assertNotNull(result);
+<span class="nc" id="L52">	}</span>
+	
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testVendingMachineItem_3()
+		throws Exception {
+<span class="fc" id="L57">		String name = &quot;cookie&quot;;</span>
+<span class="fc" id="L58">		double price = -5.0;</span>
+
+<span class="nc" id="L60">		VendingMachineItem result = new VendingMachineItem(name, price);</span>
+
+		// add additional test code here
+		//assertNotNull(result);
+<span class="nc" id="L64">	}</span>
+
+	/**
+	 * Run the String getName() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 */
+	@Test
+	public void testGetName_1()
+		throws Exception {
+<span class="fc" id="L76">		VendingMachineItem fixture = new VendingMachineItem(&quot;&quot;, 1.0);</span>
+
+<span class="fc" id="L78">		String result = fixture.getName();</span>
+
+		// add additional test code here
+<span class="fc" id="L81">		assertEquals(&quot;&quot;, result);</span>
+<span class="fc" id="L82">	}</span>
+	
+	@Test
+	public void testGetName_2()
+		throws Exception {
+<span class="fc" id="L87">		VendingMachineItem fixture = new VendingMachineItem(&quot;testing&quot;, 1.0);</span>
+
+<span class="fc" id="L89">		String result = fixture.getName();</span>
+
+		// add additional test code here
+<span class="fc" id="L92">		assertNotEquals(&quot;testingg&quot;, result);</span>
+<span class="fc" id="L93">	}</span>
+
+	/**
+	 * Run the double getPrice() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 */
+	@Test
+	public void testGetPrice_1()
+		throws Exception {
+<span class="fc" id="L105">		VendingMachineItem fixture = new VendingMachineItem(&quot;&quot;, 1.0);</span>
+
+<span class="fc" id="L107">		double result = fixture.getPrice();</span>
+
+		// add additional test code here
+<span class="fc" id="L110">		assertEquals(1.0, result, 0.1);</span>
+<span class="fc" id="L111">	}</span>
+	
+	@Test
+	public void testGetPrice_2()
+		throws Exception {
+<span class="fc" id="L116">		VendingMachineItem fixture = new VendingMachineItem(&quot;test&quot;, 2.50);</span>
+
+<span class="fc" id="L118">		double result = fixture.getPrice();</span>
+
+		// add additional test code here
+<span class="fc" id="L121">		assertEquals(2.50, result, 0.1);</span>
+<span class="fc" id="L122">	}</span>
+	
+	@Test
+	public void testGetPrice_3()
+		throws Exception {
+<span class="fc" id="L127">		VendingMachineItem fixture = new VendingMachineItem(&quot;test&quot;, 2.50);</span>
+
+<span class="fc" id="L129">		double result = fixture.getPrice();</span>
+
+		// add additional test code here
+<span class="fc" id="L132">		assertNotEquals(3.50, result, 0.1);</span>
+<span class="fc" id="L133">	}</span>
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 */
+	@Before
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
+<span class="fc" id="L147">	}</span>
+
+	/**
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 */
+	@After
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
+<span class="fc" id="L161">	}</span>
+
+	/**
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L171">		new org.junit.runner.JUnitCore().run(VendingMachineItemTest.class);</span>
+<span class="nc" id="L172">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>src (Mar 16, 2016 11:47:20 PM)</div></body></html>
