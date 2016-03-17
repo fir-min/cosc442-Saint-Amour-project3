@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>VendingMachineTest</code> contains tests for the class <code>{@link VendingMachine}</code>.
  *
- * @generatedBy CodePro at 3/16/16 11:30 PM
+ * @generatedBy CodePro at 3/16/16 11:21 PM
  * @author FIRMS
  * @version $Revision: 1.0 $
  */
@@ -16,7 +16,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testVendingMachine_1()
@@ -35,7 +35,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testVendingMachine_2()
@@ -54,7 +54,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testAddItem_1()
@@ -74,7 +74,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testAddItem_2()
@@ -94,7 +94,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testAddItem_3()
@@ -114,7 +114,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testGetBalance_1()
@@ -133,7 +133,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testGetItem_1()
@@ -153,7 +153,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testGetItem_2()
@@ -173,7 +173,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testInsertMoney_1()
@@ -192,7 +192,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testInsertMoney_2()
@@ -211,7 +211,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testMakePurchase_1()
@@ -231,7 +231,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testMakePurchase_2()
@@ -251,7 +251,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testMakePurchase_3()
@@ -271,7 +271,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testMakePurchase_4()
@@ -291,7 +291,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testRemoveItem_1()
@@ -311,7 +311,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testRemoveItem_2()
@@ -331,7 +331,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testRemoveItem_3()
@@ -351,7 +351,7 @@ public class VendingMachineTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testReturnChange_1()
@@ -371,7 +371,7 @@ public class VendingMachineTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Before
 	public void setUp()
@@ -385,7 +385,7 @@ public class VendingMachineTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@After
 	public void tearDown()
@@ -398,7 +398,7 @@ public class VendingMachineTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:30 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(VendingMachineTest.class);

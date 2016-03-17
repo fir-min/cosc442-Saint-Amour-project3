@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>VendingMachineItemTest</code> contains tests for the class <code>{@link VendingMachineItem}</code>.
  *
- * @generatedBy CodePro at 3/16/16 11:31 PM
+ * @generatedBy CodePro at 3/16/16 11:21 PM
  * @author FIRMS
  * @version $Revision: 1.0 $
  */
@@ -16,7 +16,7 @@ public class VendingMachineItemTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testVendingMachineItem_1()
@@ -37,7 +37,7 @@ public class VendingMachineItemTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
 	public void testVendingMachineItem_2()
@@ -50,13 +50,25 @@ public class VendingMachineItemTest {
 		// add additional test code here
 		assertNotNull(result);
 	}
+	
+	@Test(expected = edu.towson.cis.cosc442.project3.vendingmachine.VendingMachineException.class)
+	public void testVendingMachineItem_3()
+		throws Exception {
+		String name = "stuff";
+		double price = 0.0;
+
+		VendingMachineItem result = new VendingMachineItem(name, price);
+
+		// add additional test code here
+		assertNotNull(result);
+	}
 
 	/**
 	 * Run the String getName() method test.
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testGetName_1()
@@ -74,7 +86,7 @@ public class VendingMachineItemTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Test
 	public void testGetPrice_1()
@@ -93,7 +105,7 @@ public class VendingMachineItemTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@Before
 	public void setUp()
@@ -107,7 +119,7 @@ public class VendingMachineItemTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	@After
 	public void tearDown()
@@ -120,7 +132,7 @@ public class VendingMachineItemTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 3/16/16 11:31 PM
+	 * @generatedBy CodePro at 3/16/16 11:21 PM
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(VendingMachineItemTest.class);

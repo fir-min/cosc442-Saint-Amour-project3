@@ -1816,3 +1816,12 @@ This version of Shared was compiled for Eclipse 3.7 but is running on Eclipse 3.
 
 !ENTRY com.instantiations.eclipse 1 0 2016-03-16 23:20:44.329
 !MESSAGE Compilation unit does not exist: VendingMachineItemTest.java
+
+!ENTRY com.instantiations.eclipse 1 0 2016-03-16 23:30:42.380
+!MESSAGE Compilation unit does not exist: VendingMachineExceptionTest.java
+
+!ENTRY com.instantiations.eclipse 1 0 2016-03-16 23:30:42.383
+!MESSAGE Compilation unit does not exist: VendingMachineTest.java
+
+!ENTRY com.instantiations.eclipse 1 0 2016-03-16 23:30:42.453
+!MESSAGE Compilation unit does not exist: VendingMachineItemTest.java

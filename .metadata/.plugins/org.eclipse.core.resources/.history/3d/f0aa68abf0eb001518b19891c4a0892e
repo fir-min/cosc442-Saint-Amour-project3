@@ -20,15 +20,4 @@ import org.junit.runners.Suite;
 	VendingMachineItemTest.class,
 })
 public class TestAll {
-
-	/**
-	 * Launch the test.
-	 *
-	 * @param args the command line arguments
-	 *
-	 * @generatedBy CodePro at 3/16/16 11:31 PM
-	 */
-	public static void main(String[] args) {
-		JUnitCore.runClasses(new Class[] { TestAll.class });
-	}
 }
